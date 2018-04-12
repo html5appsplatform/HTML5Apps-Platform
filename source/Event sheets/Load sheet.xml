@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Load sheet</name>
+    <events>
+        <event-block sid="420802109407842">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="635469504787477" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="561843820249393" type="System">
+                    <param id="0" name="Width">405</param>
+                    <param id="1" name="Height">574</param>
+                </action>
+                <action id="29" name="Set Size" sid="636289409312831" type="Electron">
+                    <param id="0" name="Width">405</param>
+                    <param id="1" name="Height">574</param>
+                    <param id="2" name="Animated">0</param>
+                </action>
+                <action id="14" name="Set background transparent" sid="663282367519042" type="Electron" />
+            </actions>
+        </event-block>
+        <event-block sid="665940186276011">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="238387920865960" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set progress" sid="169066317174243" type="ProgressBar">
+                    <param id="0" name="Value">loadingprogress</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="390079706855320">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="209513676301071" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="139720193803862" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

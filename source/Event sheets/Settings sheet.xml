@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Settings sheet</name>
+    <events>
+        <event-block sid="474459396117684">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="831877023887087" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="688576506614909" type="System">
+                    <param id="0" name="Width">405</param>
+                    <param id="1" name="Height">574</param>
+                </action>
+                <action id="29" name="Set Size" sid="967000222370580" type="Electron">
+                    <param id="0" name="Width">405</param>
+                    <param id="1" name="Height">574</param>
+                    <param id="2" name="Animated">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="424059342597691">
+            <conditions>
+                <condition id="3" name="On touched object" sid="239683057121167" type="Touch">
+                    <param id="0" name="Object">back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Prepare Transition" sid="637896180248754" type="LayoutTransitionV2" />
+                <action id="-16" name="Wait" sid="921549086669683" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377712073426367">
+            <conditions>
+                <condition id="0" name="Is transition ready" sid="190368046326069" type="LayoutTransitionV2" />
+            </conditions>
+            <actions>
+                <action id="1" name="Start Transition" sid="369050756289503" type="LayoutTransitionV2">
+                    <param id="0" name="Transition Name">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="618289786114342" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
